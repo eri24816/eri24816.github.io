@@ -1,3 +1,15 @@
 [submodule "hugo-theme-massively"]
 	path = hugo-theme-massively
 	url = https://github.com/curtistimson/hugo-theme-massively.git
+[submodule "themes/hugo-theme-meme"]
+	path = themes/hugo-theme-meme
+	url = https://github.com/reuixiy/hugo-theme-meme
+[submodule "themes/hugo-theme-doors"]
+	path = themes/hugo-theme-doors
+	url = https://github.com/zzzmisa/hugo-theme-doors.git
+[submodule "themes/hugo-theme-chunky-poster"]
+	path = themes/hugo-theme-chunky-poster
+	url = https://github.com/puresyntax71/hugo-theme-chunky-poster.git
+[submodule "themes/blist-hugo-theme"]
+	path = themes/blist-hugo-theme
+	url = https://github.com/apvarun/blist-hugo-theme.git

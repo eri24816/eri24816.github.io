@@ -1,4 +1,11 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://eri24816.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hugo-theme-massively" 
+title = "eri24816's blog"
+theme = "chunky-poster"
+
+summaryLength=10
+
+[Params]
+    customCSS = ["custom.css"]
+    js = ["js/custom.js"]
+
