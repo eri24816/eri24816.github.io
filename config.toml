@@ -7,5 +7,6 @@ summaryLength=10
 
 [Params]
     customCSS = ["custom.css"]
-    js = ["js/custom.js"]
+    customJS = ["custom.js"]
+    share = true
 
