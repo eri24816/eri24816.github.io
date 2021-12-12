@@ -2,8 +2,8 @@ onscroll = function () {
     //your code here
     scrollTop = $(window).scrollTop();
     opacity = scrollTop / 300;
-    blur = Math.min(2, scrollTop / 200);
-    brightness = Math.max(0.5, 1 - scrollTop / 500);
+    blur = Math.min(2, scrollTop / 400);
+    brightness = Math.max(0.2, 1 - scrollTop / 300);
 
     ['.latest','.articles'].forEach( function(e){
         $(e).css('opacity', opacity);
