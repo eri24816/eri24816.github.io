@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = "eri24816's blog"
 theme = "chunky-poster"
 
-summaryLength=10
+summaryLength=5
 
 [Params]
     customCSS = ["custom.css"]

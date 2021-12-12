@@ -2,6 +2,7 @@
 title: "Google Fractal Theme"
 date: 2021-12-12T23:37:36+08:00
 draft: false
+tag: ["s"]
 image: https://i.imgur.com/rG8VEVl.jpg
 ---
 
