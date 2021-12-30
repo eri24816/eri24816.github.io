@@ -25,7 +25,7 @@ body{
     background-position :-400px;
     background-size :130%;
     backdrop-filter:brightness(100%) ;
-    color:rgb(210, 220, 255);
+    color:rgb(195, 198, 209);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -71,4 +71,4 @@ a:hover {
     background-color:rgba(0, 0, 0, 0.664);
     
 }
-.card-text{color:rgb(210, 220, 255);}
+.card-text{color:rgb(195, 198, 209);}
