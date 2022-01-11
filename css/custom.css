@@ -23,7 +23,7 @@ body{
 	background-repeat :no-repeat;
 	background-attachment :fixed;
     background-position :-400px;
-    background-size :130%;
+    background-size :1300%;
     backdrop-filter:brightness(100%) ;
     color:rgb(195, 198, 209);
 }
