@@ -19,11 +19,12 @@ body {
 }
 
 body{
-    background-image :url(https://i.imgur.com/pkiX69L.jpg);
+    background-image: url(https://i.imgur.com/pkiX69L.jpg);
+
 	background-repeat :no-repeat;
 	background-attachment :fixed;
     background-position :-400px;
-    background-size :130%;
+    background-size :100%;
     backdrop-filter:brightness(100%) ;
     color:rgb(195, 198, 209);
 }
