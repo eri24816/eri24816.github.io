@@ -5,6 +5,12 @@ img[src$='#center']{
     margin: 0.7rem auto; 
 } 
 
+img[src$='#centers']{
+    height :14rem;
+    display: block;
+    margin: 0.7rem auto; 
+} 
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -73,3 +79,14 @@ a:hover {
     
 }
 .card-text{color:rgb(195, 198, 209);}
+
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
+
+pre{
+    background: #00305060 !important;
+}
