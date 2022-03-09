@@ -9,7 +9,14 @@ mathjax: true
 
 This tutorial will demonstrate how to build and train a simple RNN model with PyTorch.
 
-### Imports
+## What can an RNN do?
+
+Given an input sequence $[x_0,x_1,\cdots,x_{n-1}]$, an RNN can generate a corresponding output sequence $[y_0,y_1,\cdots,y_{n-1}]$ 
+successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $y_i$, the model can use not only $x_i$, but also $h_i$ to get the information of $x_0$ to $x_{i-1}$.
+
+![Image](https://i.imgur.com/UIwIkg8.png#center)
+
+### 1. Import
 Import the modules we will need.
 ```python
 import numpy as np
@@ -18,9 +25,9 @@ from torch import nn
 import matplotlib.pyplot as plt
 ```
 
-### Prepare the training data
+### 2. Prepare the training data
 First, we need the training data. 
-Here we generate a sine wave of $\sin(t)$, from $t=0$ to $t=80$, and sample peirod $=0.2$. Then add a little noise to it.
+Here we generate a sine wave of $\sin(t)$, from $t=0$ to $t=80$, and sample peirod $=0.2$. Then a little noise is added to simulate sampling error.
 
 ```python
 data = np.sin(np.arange(0,80,0.2))
@@ -29,10 +36,31 @@ plt.plot(data)
 ```
 ![Image](https://i.imgur.com/07PP9iu.jpg#centers)
 
-Later, we will build the RNN model to learn on the training data.
+By default, an RNN module require its input tensor to have the shape $[ Time, Batch, Feature ]$. In our case, the training data has 
+batch size feature num both set to 1. So we have to expand the original data of size $[400]$ to $[ 400, 1,1 ]$ by doing unsqueeze(-1) twice.
+```python
+print(data.shape) #(400,)
+
+# convert data into a torch tensor and expand the dimension of its shape
+data = torch.tensor(data, dtype = torch.float).unsqueeze(-1).unsqueeze(-1)
+
+print(data.shape) # torch.Size([400, 1, 1])
+```
+
+To 
 
 ```python
-data = torch.tensor(data, dtype = torch.float).unsqueeze(-1).unsqueeze(-1)
 x = data[:-1]
 y = data[1:]
+```
+
+```python
+class SimpleRNN(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.rnn = nn.RNN(1,12)
+        self.linear = nn.Linear(12,1)
+    def forward(self, x, h_0 = None):
+        rnn_out, h_n = self.rnn(x, h_0)
+        return self.linear(rnn_out), h_n
 ```
