@@ -3,18 +3,31 @@ title: "PyTorch RNN Tutorial"
 date: 2022-03-09T12:54:18+08:00
 draft: false
 image: https://i.imgur.com/X6kty5v.jpg
+tags: ["Python","torch"]
 mathjax: true
 ---
 
+This tutorial will demonstrate how to build and train a simple autoregressive RNN model with PyTorch.
 
-This tutorial will demonstrate how to build and train a simple RNN model with PyTorch.
+## Concepts
 
-## What can an RNN do?
+### What does an RNN do?
 
 Given an input sequence $[x_0,x_1,\cdots,x_{n-1}]$, an RNN can generate a corresponding output sequence $[y_0,y_1,\cdots,y_{n-1}]$ 
-successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $y_i$, the model can use not only $x_i$, but also $h_i$ to get the information of $x_0$ to $x_{i-1}$.
+successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $y_i$, the model can use not only $x_i$, but also $h_i$ to get the information from $x_0$ to $x_{i-1}$.
+
 
 ![Image](https://i.imgur.com/UIwIkg8.png#center)
+
+### Autoregressive model
+
+Given the characteristics of an RNN, we can make it do something cool -- predicting a sequence. 
+
+Imagine now we have a sequence, [1,2,3,4,5], and feed it into an RNN. If the model is good at predicting linear sequences, it may predict 6 as the next number (or something like 5.9 or 6.01) by 
+
+![Image](https://i.imgur.com/1hiTAKz.jpg)
+
+## Implementation
 
 ### 1. Import
 Import the modules we will need.
