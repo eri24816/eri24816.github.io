@@ -12,7 +12,7 @@ This tutorial will demonstrate how to build and train a simple autoregressive RN
 ## Concepts
 
 ### What does an RNN do?
-
+ 
 Given an input sequence $[x_0,x_1,\cdots,x_{n-1}]$, an RNN can generate a corresponding output sequence $[y_0,y_1,\cdots,y_{n-1}]$ 
 successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $y_i$, the model can use not only $x_i$, but also $h_i$ to get the information from $x_0$ to $x_{i-1}$.
 
