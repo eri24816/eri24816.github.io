@@ -14,7 +14,7 @@ This tutorial will demonstrate how to build and train a simple RNN model with Py
 ### What does an RNN do?
  
 Given an input sequence $x=[x_1,x_2,\cdots,x_{n}]$, an RNN can generate a corresponding output sequence $\hat y=[\hat y_1,\hat y_2,\cdots,\hat y_{n}]$ 
-successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $\hat y_i$, the model can use not only $x_i$, but also $h_{i-1}$ to get the information from $x_0$ to $x_{i-1}$.
+successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $\hat y_i$, the model can access not only $x_i$ but also the information from $x_0$ to $x_{i-1}$, via its hidden state, $h_{i-1}$.
 
 
 ![Image](https://i.imgur.com/lw62OZL.png#center)
@@ -27,15 +27,15 @@ Imagine now we have a initial sequence [1,2,3,4,5] and feed it into an RNN. If t
 
 ![Image](https://i.imgur.com/cCr0pSK.png)
 
-Then we put the 6.05 back to the sequence, make it [1,2,3,4,5,6.05], and feed it into the model again. This time, 7.02 is predicted, so the sequence becomes [1,2,3,4,5,6.05,7.02]. As we repeat this process, the model can generate a long sequence by itself.
+Then we put the 6.05 back to the sequence, make it [1,2,3,4,5,6.05], and feed it into the model again. This time, the model says 7.02, so the sequence becomes [1,2,3,4,5,6.05,7.02]. As we repeat this process, the model can eventually generate a long sequence by itself.
 
 ![Image](https://i.imgur.com/UhcKdwA.png)
 
-To be precise, when training, we want the model predict $x_{i+1}$, after getting the input $[x_1, x_2, \cdots,x_{i}]$. That is, the difference between $\hat y_i$ and $x_{i+1}$ is minimized.
+To be precise, when training the model, we want it predict $x_{i+1}$ after seeing the input $[x_1, x_2, \cdots,x_{i}]$. That is, the difference between its output, $\hat y_i$, and the target output, $x_{i+1}$, should be minimized.
 
 ![Image](https://i.imgur.com/jChTnLU.png#center)
 
-We can define sequence $y$ as the target output, which $y_i = x_{i+1}$.
+We can define sequence $y =[ y_1, y_2,\cdots, y_{n}]$ as the target output, which $y_i = x_{i+1}$.
 
 Thus, the loss function is the mean square error between $\hat y$ and $y$:
 
@@ -63,7 +63,7 @@ plt.plot(data)
 ```
 ![Image](https://i.imgur.com/07PP9iu.jpg#centers)
 
-By default, an RNN module require its input tensor to have the shape $[ Time, Batch, Feature ]$. In our case, we can just set the 
+By default, an RNN module require its input tensor to have the shape $[ Time, Batch, Feature ]$. To keep it simple, we can just set the 
 batch size and feature num to 1. So we have to expand the original data of size $[400]$ to $[ 400, 1,1 ]$ by doing unsqueeze(-1) twice.
 ```python
 print(data.shape) #(400,)
