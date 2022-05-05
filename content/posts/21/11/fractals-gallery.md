@@ -3,7 +3,8 @@ title: "Fractals Gallery"
 date: 2021-11-16T23:28:40+08:00
 draft: false
 image: https://i.imgur.com/LxKntZ0.jpg
-tags: ["fractal","gallery","visual","Processing"]
+tags: ["fractal","gallery","Processing"]
+categories: visual
 ---
 
 國中的時候我花最多時間研究的就是碎形。我很喜歡那種只要亂調參數就會跑出漂亮東西的感覺。

@@ -10,7 +10,7 @@ onscroll = function () {
     })
 
     //$('body').css('backdrop-filter', `brightness(${brightness}) blur(${blur}px)`);
-    $('body').css('backdrop-filter', `brightness(${brightness})`);
+    $('body').css('backdrop-filter', `brightness(${brightness*0.8})`);
     $('body').css('background-position', `100% ${-0.15 * scrollTop}px`);
 }
 

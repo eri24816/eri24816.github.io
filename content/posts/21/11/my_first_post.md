@@ -3,8 +3,7 @@ title: "My First Post"
 date: 2021-11-16T01:24:36+08:00
 draft: false
 image: https://i.imgur.com/dVY5HyZ.jpg
-tags: ["廢文"]
-
+categories: self
 ---
 
 看到大家都有 blog ，所以就用 Hugo 搞了一個。感覺可以把我做的一堆零碎的東西丟上來。

@@ -4,7 +4,7 @@ date: 2022-03-06T02:36:44+08:00
 draft: false
 image: https://i.imgur.com/MI6XyMb.png#center
 tags: ["Unity","small stuff","simulation"]
-categories: cat
+categories: visual
 ---
 
 

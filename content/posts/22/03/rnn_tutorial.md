@@ -5,6 +5,7 @@ draft: false
 image: https://i.imgur.com/X6kty5v.jpg
 tags: ["Python","torch"]
 mathjax: true
+categories: machine learning
 ---
 
 This tutorial will demonstrate how to build and train a simple RNN model with PyTorch.

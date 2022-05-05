@@ -3,7 +3,8 @@ title: "NNNode"
 date: 2021-11-17T14:22:09+08:00
 draft: false
 image: https://i.imgur.com/sIUvHcq.jpg
-tags: ["project","Python","Unity"]
+tags: ["Python","Unity"]
+categories: machine learning
 ---
 
 NNNode 是現在在做的 project。

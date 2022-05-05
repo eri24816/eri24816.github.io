@@ -9,4 +9,9 @@ summaryLength=5
     customCSS = ["custom.css"]
     customJS = ["custom.js"]
     share = true
+    description = [
+        '「如果恐怖片很恐怖，那就不要看恐怖片。」',
+        'Chase excellence, success will follow. 在我的這個環境裡，這麼做是極為危險的。'
+        ]
 
+googleAnalytics = "G-WKQTFGNJW6"
