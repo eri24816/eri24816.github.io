@@ -5,6 +5,9 @@ theme = "chunky-poster"
 
 summaryLength=5
 
+
+googleAnalytics = "G-WKQTFGNJW6"
+
 [Params]
     customCSS = ["custom.css"]
     customJS = ["custom.js"]
@@ -14,4 +17,3 @@ summaryLength=5
         'Chase excellence, success will follow. 在我的這個環境裡，這麼做是極為危險的。'
         ]
 
-googleAnalytics = "G-WKQTFGNJW6"
