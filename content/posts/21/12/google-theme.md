@@ -9,6 +9,8 @@ categories: visual
 
 我做的 Google 碎形主題
 
+這張碎形真的很漂亮
+
 ![Image](https://i.imgur.com/rG8VEVl.jpg#center)
 
 ```css
