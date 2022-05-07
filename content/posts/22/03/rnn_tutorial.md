@@ -12,7 +12,7 @@ This tutorial will demonstrate how to build and train a simple RNN model with Py
 
 ## Concepts
 
-### What does an RNN do?
+### What can an RNN do?
  
 Given an input sequence $x=[x_1,x_2,\cdots,x_{n}]$, an RNN can generate a corresponding output sequence $\hat y=[\hat y_1,\hat y_2,\cdots,\hat y_{n}]$ 
 successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $\hat y_i$, the model can access not only $x_i$ but also the information from $x_0$ to $x_{i-1}$, via its hidden state, $h_{i-1}$.
@@ -75,7 +75,7 @@ data = torch.tensor(data, dtype = torch.float).unsqueeze(-1).unsqueeze(-1)
 print(data.shape) # torch.Size([400, 1, 1])
 ```
 
-Make x and y that satisfy $y_i = x_{i+1}$.
+Get x and y that satisfy $y_i = x_{i+1}$.
 
 ```python
 #input sequence
