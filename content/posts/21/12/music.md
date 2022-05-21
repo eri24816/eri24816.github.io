@@ -2,8 +2,8 @@
 title: "音樂"
 date: 2021-12-05T23:52:15+08:00
 draft: true
-tag: ["廢文"]
 image : https://i.imgur.com/rG8VEVl.jpg
+categories: self
 ---
 
 我傾向音樂比較像圖像，而比較不像語言。

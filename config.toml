@@ -5,8 +5,16 @@ theme = "chunky-poster"
 
 summaryLength=5
 
+
+googleAnalytics = "G-WKQTFGNJW6"
+
 [Params]
     customCSS = ["custom.css"]
     customJS = ["custom.js"]
     share = true
+    description = [
+        '<i>「如果恐怖片很恐怖，那就不要看恐怖片。」<div style="text-align: right; max-width: 500px; margin-top: 20px;" ></i>- eri24816</div>',
+        '<i>Chase excellence, success will follow.</i> 在我的這個環境裡，這麼做是極為危險的。',
+        '希望在大學的壓力下不要丟失我的初衷。<br/>那就是：我喜愛這個世界，所以想以最 high level 的角度理解世界，幫各種我喜歡的東西建立模型。像是音樂生成模型、style transfer、物理模擬。'
+        ]
 

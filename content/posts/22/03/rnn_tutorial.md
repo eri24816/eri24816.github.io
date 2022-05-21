@@ -5,27 +5,42 @@ draft: false
 image: https://i.imgur.com/X6kty5v.jpg
 tags: ["Python","torch"]
 mathjax: true
+categories: machine learning
 ---
 
-This tutorial will demonstrate how to build and train a simple autoregressive RNN model with PyTorch.
+This tutorial will demonstrate how to build and train a simple RNN model with PyTorch.
 
 ## Concepts
 
-### What does an RNN do?
+### What can an RNN do?
  
-Given an input sequence $[x_0,x_1,\cdots,x_{n-1}]$, an RNN can generate a corresponding output sequence $[y_0,y_1,\cdots,y_{n-1}]$ 
-successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $y_i$, the model can use not only $x_i$, but also $h_i$ to get the information from $x_0$ to $x_{i-1}$.
+Given an input sequence $x=[x_1,x_2,\cdots,x_{n}]$, an RNN can generate a corresponding output sequence $\hat y=[\hat y_1,\hat y_2,\cdots,\hat y_{n}]$ 
+successively. The strength of RNN is that it can "remember" its previosly seen input elements. When calculating $\hat y_i$, the model can access not only $x_i$ but also the information from $x_0$ to $x_{i-1}$, via its hidden state, $h_{i-1}$.
 
 
-![Image](https://i.imgur.com/UIwIkg8.png#center)
+![Image](https://i.imgur.com/lw62OZL.png#center)
 
 ### Autoregressive model
 
 Given the characteristics of an RNN, we can make it do something cool -- predicting a sequence. 
 
-Imagine now we have a sequence, [1,2,3,4,5], and feed it into an RNN. If the model is good at predicting linear sequences, it may predict 6 as the next number (or something like 5.9 or 6.01) by 
+Imagine now we have a initial sequence [1,2,3,4,5] and feed it into an RNN. If the model is good at predicting linear sequences, it will predict some number near 6 as the next number, let's say 6.05. 
 
-![Image](https://i.imgur.com/1hiTAKz.jpg)
+![Image](https://i.imgur.com/cCr0pSK.png)
+
+Then we put the 6.05 back to the sequence, make it [1,2,3,4,5,6.05], and feed it into the model again. This time, the model says 7.02, so the sequence becomes [1,2,3,4,5,6.05,7.02]. As we repeat this process, the model can eventually generate a long sequence by itself.
+
+![Image](https://i.imgur.com/UhcKdwA.png)
+
+To be precise, when training the model, we want it predict $x_{i+1}$ after seeing the input $[x_1, x_2, \cdots,x_{i}]$. That is, the difference between its output, $\hat y_i$, and the target output, $x_{i+1}$, should be minimized.
+
+![Image](https://i.imgur.com/jChTnLU.png#center)
+
+We can define sequence $y =[ y_1, y_2,\cdots, y_{n}]$ as the target output, which $y_i = x_{i+1}$.
+
+Thus, the loss function is the mean square error between $\hat y$ and $y$:
+
+$$ \frac{1}{n}\sum_{i= 1}^{n}{(\hat y_i-x_{i+1})^2} = \frac{1}{n}\sum_{i= 1}^{n}{(\hat y_i-y_i)^2} = MSE(\hat y,y)$$.
 
 ## Implementation
 
@@ -49,8 +64,8 @@ plt.plot(data)
 ```
 ![Image](https://i.imgur.com/07PP9iu.jpg#centers)
 
-By default, an RNN module require its input tensor to have the shape $[ Time, Batch, Feature ]$. In our case, the training data has 
-batch size feature num both set to 1. So we have to expand the original data of size $[400]$ to $[ 400, 1,1 ]$ by doing unsqueeze(-1) twice.
+By default, an RNN module require its input tensor to have the shape $[ Time, Batch, Feature ]$. To keep it simple, we can just set the 
+batch size and feature num to 1. So we have to expand the original data of size $[400]$ to $[ 400, 1,1 ]$ by doing unsqueeze(-1) twice.
 ```python
 print(data.shape) #(400,)
 
@@ -60,10 +75,13 @@ data = torch.tensor(data, dtype = torch.float).unsqueeze(-1).unsqueeze(-1)
 print(data.shape) # torch.Size([400, 1, 1])
 ```
 
-To 
+Get x and y that satisfy $y_i = x_{i+1}$.
 
 ```python
+#input sequence
 x = data[:-1]
+
+# target output sequence
 y = data[1:]
 ```
 

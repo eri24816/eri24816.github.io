@@ -4,9 +4,12 @@ date: 2021-12-12T23:37:36+08:00
 draft: false
 tags: ["small stuff"]
 image: https://i.imgur.com/rG8VEVl.jpg
+categories: visual
 ---
 
 我做的 Google 碎形主題
+
+這張碎形真的很漂亮
 
 ![Image](https://i.imgur.com/rG8VEVl.jpg#center)
 
