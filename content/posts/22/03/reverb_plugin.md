@@ -98,7 +98,7 @@ $$a=e^{-2\pi \frac{ \mathit{Cutoff}} {\mathit{SampleRate}}}$$
 
 接下來就是用 $(r,θ)$ 來推出 IIR 的結構。
 
-設此 filter 的 response 為 $\frac{P(z)}{Q(z)}$，$P$ 的兩根為 zero，$Q$ 的兩根為 pole。那麼:[^1]
+設此 filter 的 response 為 $H(z)=\frac{P(z)}{Q(z)}$，$P$ 的兩根為 zero，$Q$ 的兩根為 pole。那麼:[^1]
 
 $$\begin{aligned}
 P(z) &=(z-r^{-1}e^{iθ}) (z-r^{-1}e^{-iθ})  \\\\
@@ -109,7 +109,20 @@ P(z) &=(z-r^{-1}e^{iθ}) (z-r^{-1}e^{-iθ})  \\\\
 
 $$\begin{aligned}
 Q(z)&=(z-re^{iθ})(z-re^{-iθ})\\\\
-&=z^2-r(e^{iθ}+e^{-iθ})z+r^2
+&=z^2-r(e^{iθ}+e^{-iθ})z+r^2\\\\
+&=z^2-2r\cos(θ)z+r^2
+\end{aligned}$$
+
+令$X(z)$為輸入，$Y(z)$為輸出
+$$\begin{aligned}
+Y(z)&=H(z)X(z)\\\\
+&=\frac{P(z)}{Q(z)}X(z)\\\\
+\end{aligned}$$
+
+$$\begin{aligned}
+Q(z)Y(z)&=P(z)X(z)\\\\
+(z^2-2r\cos(θ)z+r^2)Y(z)&=(z^2-2r^{-1}\cos(θ)z+r^{-2})X(z)\\\\
+(1-2r\cos(θ)z^{-1}+r^2z^{-2})Y(z)&=(1-2r^{-1}\cos(θ)z^{-1}+r^{-2}z^{-2})X(z)\\\\
 \end{aligned}$$
 
 ### Comb
