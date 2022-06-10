@@ -86,6 +86,35 @@ $$a=e^{-2\pi \frac{ \mathit{Cutoff}} {\mathit{SampleRate}}}$$
 
 ### Allpass
 
+它是二階的 all pass filter。這是這個 project 最難做的 filter，我們必須由該 filter 應具有的性質，推導出實作的方法。
+
+二階 all pass filter 的 pole-zero plot 有兩個 poles 和兩個 zeros，且此 filter 的性質受到以下限制:
+1. 根據 complex conjugate root theorem，兩個 poles(zeros) 必共軛
+2. 為了讓各頻率的 amplitude response 皆維持在 1，每個 pole 對單位圓的反演處必須有一個 zero，反之亦然
+
+結合這兩項限制，代表我們只需要一組參數 $(r,θ)$ 來控制某一個 pole 的位置，即可以決定所有 pole 和 zero 的位置，也決定了這個二階 filter。
+
+![Image](https://i.imgur.com/4HVI7Xu.png#centers)
+
+接下來就是用 $(r,θ)$ 來推出 IIR 的結構。
+
+設此 filter 的 response 為 $\frac{P(z)}{Q(z)}$，$P$ 的兩根為 zero，$Q$ 的兩根為 pole。那麼:[^1]
+
+$$\begin{aligned}
+P(z) &=(z-r^{-1}e^{iθ}) (z-r^{-1}e^{-iθ})  \\\
+&=z^2-r^{-1}(e^{iθ}+e^{-iθ})z+r^{-2}\\\
+&=z^2-2r^{-1}\cos(θ)z+r^{-2}
+\end{aligned}$$
+
+
+$$\begin{aligned}
+Q(z)&=(z-re^{iθ})(z-re^{-iθ})\\\
+&=z^2-r(e^{iθ}+e^{-iθ})z+r^2
+\end{aligned}$$
+
 ### Comb
 
 ## 調整參數
+
+
+[^1]: 國中學了但從未用過的根與係數終於在這裡用到了，覺得國中很浪費時間的心情稍稍下降了一點。
