@@ -3,7 +3,7 @@ title: "Reverb plugin"
 date: 2022-03-16T17:33:37+08:00
 draft: false
 
-image: "https://i.imgur.com/v9uOdti.jpg"
+image: "https://i.imgur.com/8qGh9bk.png"
 categories: "music"
 tags: ["c++"]
 MathJax : true
@@ -153,6 +153,9 @@ float* update(float* input)override {
     return input;
 }
 ```
+
+![Image](https://i.imgur.com/u0USmfH.png#centers)
+
 (但其實這個沒有用到，我們用 all pass 代替它了
 
 ### Reverb
