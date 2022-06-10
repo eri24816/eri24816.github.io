@@ -13,9 +13,11 @@ categories: music
 
 在這個 transformer 當道的時代，大家紛紛拿 transformer-like 的 language model 來生成音樂，所以音樂被視為字詞序列，所有音符、時間和其他資訊攤都被平成一串 token。例如 [Pop Music Transformer](https://arxiv.org/abs/2002.00212)。
 
-巨觀來看，音樂像自然語言沒錯，情緒會在語句間、章節間漂浮；但我認為若從微觀來看，音樂比較像圖像，有和弦、上下行、琶音等 pattern，這點從樂譜，甚至頻譜上能很明顯地看出來。
+巨觀來看，音樂像自然語言沒錯，情緒會在語句間、章節間漂浮；但若從微觀來看，音樂比較像圖像，有和弦、上下行、琶音等 pattern，這點從樂譜，甚至頻譜上能很明顯地看出來。
 
-和弦進行是音樂 (至少說流行音樂) 的最重要的骨架，它引領著聽者的情緒，是聽者感受最明顯的一個層次。我想以和弦進行為分界，和弦進行以上 (1 bar ~ 整首歌) 的尺度以 transformer (或其他 auto-regressive model) 處理，而和弦以下 (note/frame ~ 1 bar) 的尺度主要以 CNN 處理。而整個神經網路模型結構就像圖像處理模型一樣，漸進式地擴大能感知到的 feature 尺度:
+所以我給的答案是，音樂在低階 feature 處應該當圖像看待，而高階 feature 處應該當文字。
+
+我想以和弦進行為分界，和弦進行以上 (1 bar ~ 整首歌) 的尺度以 transformer (或其他 auto-regressive model) 處理，而和弦以下 (note/frame ~ 1 bar) 的尺度主要以 CNN 處理。而整個神經網路模型結構就像圖像處理模型一樣，漸進式地擴大能感知到的 feature 尺度:
 
 1. 音符
 2. 和聲
@@ -24,7 +26,9 @@ categories: music
 5. 情緒變化
 6. 整首音樂的 embedding
 
-當然在生成的時候，不是所有較高階的 feature 都能很好的決定較低階的 feature，所以除了放著讓它隨機取樣外，應該也要設計中間某些層次的 conditioning 機制。
+這樣做相對於純 transformer 有什麼好處?
+1. CNN 比較會乖乖學固定的幾種 pattern，而音樂的低階 pattern 滿固定的 (因為樂理)
+2. Transformer 為了不讓計算量太高，限制了視野距離。針對於此，TransformerXL 在常數級別增加了 transformer 視野距離。而我使用的時間尺度漸進式架構，則能以指數級別增加視野距離。
 
 ## 我想的作法
 
@@ -37,7 +41,7 @@ categories: music
 
 ![Image](https://i.imgur.com/FKMW1YZ.png#center)
 
-先訓練最底下的 E1、D1，訓練完後把 dataset 用 E1 轉上來，變成較抽象的 z1，用來 train E2、D2。然後再用同樣的方法 train E3、D3。
+先訓練最底下的 E1、D1，訓練完後把 dataset 用 E1 轉上來，變成較抽象的 z1，用來 train E2、D2。然後再用同樣的方法 train E3、D3。(我是沒這樣 train 過東西啦，說不定根本 train 不起來，but who knows)
 
 
 ![Image](https://i.imgur.com/KZxxhKn.png#center)
