@@ -101,14 +101,14 @@ $$a=e^{-2\pi \frac{ \mathit{Cutoff}} {\mathit{SampleRate}}}$$
 設此 filter 的 response 為 $\frac{P(z)}{Q(z)}$，$P$ 的兩根為 zero，$Q$ 的兩根為 pole。那麼:[^1]
 
 $$\begin{aligned}
-P(z) &=(z-r^{-1}e^{iθ}) (z-r^{-1}e^{-iθ})  \\\
-&=z^2-r^{-1}(e^{iθ}+e^{-iθ})z+r^{-2}\\\
+P(z) &=(z-r^{-1}e^{iθ}) (z-r^{-1}e^{-iθ})  \\\\
+&=z^2-r^{-1}(e^{iθ}+e^{-iθ})z+r^{-2}\\\\
 &=z^2-2r^{-1}\cos(θ)z+r^{-2}
 \end{aligned}$$
 
 
 $$\begin{aligned}
-Q(z)&=(z-re^{iθ})(z-re^{-iθ})\\\
+Q(z)&=(z-re^{iθ})(z-re^{-iθ})\\\\
 &=z^2-r(e^{iθ}+e^{-iθ})z+r^2
 \end{aligned}$$
 
