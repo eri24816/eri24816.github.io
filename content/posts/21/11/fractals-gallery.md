@@ -5,6 +5,7 @@ draft: false
 image: https://i.imgur.com/LxKntZ0.jpg
 categories: visual
 tags: ["fractal","gallery","visual","Processing"]
+summary: "複數平面好玩的地方是，每種運算都對應到某種空間變換:加法是平移，乘法是旋轉，冪是繞成n圈(像是一條橡皮筋綁兩圈)，指數是 xy 坐標和極座標的轉換。"
 ---
 
 國中的時候我花最多時間研究的就是碎形。我很喜歡那種只要亂調參數就會跑出漂亮東西的感覺。

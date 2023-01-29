@@ -5,6 +5,7 @@ draft: false
 tags: ["small stuff"]
 image: https://i.imgur.com/rG8VEVl.jpg
 categories: visual
+summary: "我做的 Google 碎形主題"
 ---
 
 我做的 Google 碎形主題

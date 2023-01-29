@@ -4,6 +4,7 @@ date: 2022-06-10T23:34:05+08:00
 draft: false
 image: "https://i.imgur.com/64Dk0jO.png"
 categories: music
+summary: "音樂像文字，還是圖像?"
 ---
 ![Image](https://i.imgur.com/64Dk0jO.png#center)
 

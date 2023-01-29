@@ -7,6 +7,7 @@ image: "https://i.imgur.com/8qGh9bk.png"
 categories: "music"
 tags: ["c++"]
 MathJax : true
+Summary: "我學到非常多好玩的觀念，像是 z transform、怎麼看 zero pole plot、如何用 C++ 來 OOP (踩各種指標的坑XD)。"
 ---
 一直想做的東西後來真的有課教我怎麼做，就會覺得那門課很吸引我。
 

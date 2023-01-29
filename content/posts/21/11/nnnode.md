@@ -5,6 +5,7 @@ draft: false
 image: https://i.imgur.com/sIUvHcq.jpg
 tags: ["Python","Unity"]
 categories: machine learning
+summary: "做NNNode的動機是我常常在用 Jupyter notebook 和 Pytorch train 神經網路的時候覺得很麻煩"
 ---
 
 NNNode 是現在在做的 project。

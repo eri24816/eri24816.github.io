@@ -4,6 +4,7 @@ date: 2022-09-06T15:21:01+08:00
 draft: false
 categories: "self"
 image: "https://i.imgur.com/tUOpAAx.png"
+summary: "AI 在畫月亮時，想的並不是月亮的意境、月亮在文化中代表什麼；它只是很會畫、顏色配的很好、形狀恰到好處。"
 ---
 
 聽說 AI 贏了某個畫畫比賽，引發了很多畫家的不滿。他們不認同 AI 可以當 artist。但是那幅 AI 畫的圖確實很漂亮，評審在不知道它是 AI 畫的之下給它第一名。
@@ -33,6 +34,7 @@ AI 讓人失業是個常見的議題。微觀來看失業的確不好嘛，但�
 
 {{< rawhtml >}}
 <blockquote class="twitter-tweet" data-conversation="none" data-theme="dark"><p lang="en" dir="ltr">We’re watching the death of artistry unfold right before our eyes — if creative jobs aren’t safe from machines, then even high-skilled jobs are in danger of becoming obsolete<br>What will we have then?</p>&mdash; OmniMorpho (@OmniMorpho) <a href="https://twitter.com/OmniMorpho/status/1564782875072872450?ref_src=twsrc%5Etfw">August 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
 {{< /rawhtml >}}
 
 現今等級的 AI 確實可以在資料統整上超越人類，但他們統整的資料**都是人給的**。尤其是在藝術領域，AI 並沒有與生俱來的審美觀也不懂創作脈絡，它做的事僅僅是收集人類的作品，model 出一個盡量合理的 manifold，再從裡面取樣。那個 manifold 仍然是人類先前的創作決定的。AI 在畫月亮時，想的並不是月亮的意境、月亮在文化中代表什麼，它只是很會畫、顏色配的很好、形狀恰到好處。
@@ -41,7 +43,7 @@ AI 讓人失業是個常見的議題。微觀來看失業的確不好嘛，但�
 
 ### 以後的 AI
 
-等以後 AI 發展出能和人類相提並論的意識時，勢必造成災難性的傳統道德、價值體系崩壞，迫使我們重新思考人類的價值。畫畫 AI 將不再只是繪圖軟體，而是真正的畫家。但我對此很樂觀，因為到時候就可以跟 AI 討論怎麼畫畫和做音樂了，不是超好玩的嗎。
+等以後 AI 發展出能和人類相提並論的思考複雜度時，勢必造成災難性的傳統道德、傳統價值體系崩壞，迫使我們重新思考人類的價值。畫畫 AI 將不再只是繪圖軟體，而是真正的畫家。但我對此很樂觀，因為到時候就可以跟 AI 討論怎麼畫畫和做音樂了，不是超好玩的嗎。
 
 ## 抄襲
 
@@ -56,4 +58,4 @@ AI 讓人失業是個常見的議題。微觀來看失業的確不好嘛，但�
 
 為了知道是哪種情況，我把它生成的那首音樂拿去跟 dataset 裡面的每首音樂一一比較，發現沒有一首具有足夠的相似度來引發抄襲疑慮，這時才確定我訓練的 AI 真的會做音樂。
 
-上述的 AI 的兩種可能行為(抄襲 or 憑真本事)如果套在人類身上，其實就是在描述人類的行為。所以我認為對於抄襲的認定，我們可以合理地用看待人類的方式看待 AI，也就是可以自由觀察前人的作品以獲得靈感，而最後做出的作品不要和那些參考的作品太像就不算抄襲。
+上述的 AI 的兩種可能行為(抄襲 or 憑真本事)如果套在人類身上，其實就是在描述人類的行為。所以我認為對於抄襲的認定，我們可以合理地用看待人類的方式看待 AI，也就是創作者可以自由觀察前人的作品以獲得靈感，**只要最後做出的作品不要和那些參考的作品太像**就不算抄襲。

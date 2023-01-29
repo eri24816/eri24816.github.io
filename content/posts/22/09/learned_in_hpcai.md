@@ -1,7 +1,7 @@
 ---
 title: "Learned_in_hpcai"
 date: 2022-09-12T21:28:14+08:00
-draft: false
+draft: true
 ---
 
 參與 APAC HPC-AI competition 的途中，雖然總計來說學習效率蠻低的(缺乏資源、讀了一些之後不太會用到的高深 domain knowledge)，還是有學到很多有用的東西。

@@ -1,9 +1,10 @@
 ---
-title: "中研院 summer intern 心得"
+title: "心得－中研院 summer intern"
 date: 2022-09-06T19:25:22+08:00
 draft: false
 categories: "self"
 image: "https://i.imgur.com/V3iXDYN.jpg"
+summary: "我聽著音樂寫code，期許要讓我做的AI也做出這麼”像音樂”的音樂，同時利用我自身聽音樂的感知做為設計模型的靈感。"
 ---
 
 > 2022/7/1 開始在中研院楊奕軒老師的實驗室實習的心得
@@ -21,3 +22,11 @@ Diffusion model算是新東西，而且我在初期實驗得到不錯的結果(�
 寫code很累，因為data representation是自己設計的，我從6月中花一個月寫data pipeline，從下載、分析、過濾、轉midi、轉json、轉tensor到再轉回來。然後找一份看起來最好用的diffusion model code下來，針對生成鋼琴音樂的功能到處改，還要處理tensorboard輸出等等。
 
 儘管如此，對音樂的興趣始終讓我不對研究感到厭煩。我聽著音樂寫code，期許要讓我做的AI也做出這麼”像音樂”的音樂，同時利用我自身聽音樂的感知做為設計模型的靈感，例如要讓模型顯性的感知到和聲，就要讓同一時間的每個音一起輸入模型；人對”和弦不同”感受的差異大於”同和弦但不同組成音”，所以也許在spectrogram上算loss比較合理。在AI能生成出稍微好聽的兩小節音樂片段時，我挑了一個片段把它拉進去DAW裡面，以其為基礎加油添醋、套各種樂器，改編成完整的音樂(如果沒有這個生成的片段，以我的功力是很難編出完整曲子的)。這個過程讓我意識到僅僅最初步的生成模型，就有提供編曲者強大靈感的能力，並期待我能進一步做出更強的應用。
+
+由生成出來的 midi 改編的音樂:
+
+{{<audio src="/audio/AI2_e3.mp3" caption="" >}}
+
+![Image](https://i.imgur.com/BNhpcCO.jpg#center)
+
+
