@@ -1,7 +1,7 @@
 ---
 title: "What I Gained From the 2022 APAC HPC-AI Competition"
 date: 2022-10-25T09:19:13+08:00
-draft: false
+draft: true
 ---
 
 The 2022 APAC HPC AI Competition have just finished, which took 7 months from the begining training to the final presentation. 
