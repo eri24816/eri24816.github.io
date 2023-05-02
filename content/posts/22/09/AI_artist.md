@@ -3,7 +3,7 @@ title: "對於 AI artist 的想法"
 date: 2022-09-06T15:21:01+08:00
 draft: false
 categories: "self"
-image: "https://i.imgur.com/tUOpAAx.png"
+image: "https://i.imgur.com/JN9vybX.png"
 summary: "AI 在畫月亮時，想的並不是月亮的意境、月亮在文化中代表什麼；它只是很會畫、顏色配的很好、形狀恰到好處。"
 ---
 
