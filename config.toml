@@ -12,6 +12,8 @@ googleAnalytics = "G-WKQTFGNJW6"
     customCSS = ["custom.css"]
     customJS = ["custom.js"]
     share = true
-    description = '希望在大學的壓力下不要丟失我的初衷。<br/>那就是：我喜愛這個世界，所以想以最 high level 的角度理解世界，幫各種我喜歡的東西建立模型。例如音樂生成模型、style transfer、物理模擬。'
+    description = [
+        '希望在大學的壓力下不要丟失我的初衷。<br/>那就是：我喜愛這個世界，所以想以最 high level 的角度理解世界，幫各種我喜歡的東西建立模型。例如音樂生成模型、style transfer、物理模擬。'
+    ]
         
 
