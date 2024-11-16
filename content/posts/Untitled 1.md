@@ -10,4 +10,3 @@ categories:
 series:
 ---
 testest
-{{< figure src="/attachments/Pasted image 20241116164350.png"  >}}
