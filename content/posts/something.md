@@ -1,7 +1,7 @@
 ---
-title: "廢文"
+title: 廢文
 date: 2021-12-04T13:49:55+08:00
-draft: true
+draft: false
 categories: self
 ---
 
