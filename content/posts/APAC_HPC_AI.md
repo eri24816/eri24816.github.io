@@ -4,6 +4,7 @@ date: 2022-10-25T09:19:13+08:00
 draft: false
 categories: self
 tags:
+  - torch
 ---
 
 The 2022 APAC HPC AI Competition have just finished, which took 7 months from the beginning training to the final presentation. 
