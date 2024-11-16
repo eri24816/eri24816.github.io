@@ -1,10 +1,11 @@
+from pathlib import Path
 import dotenv
 import obsidian_to_hugo
 import os
 import time
 import subprocess
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(Path(__file__).parent / ".env")
 
 OBSIDIAN_DIR = os.getenv("OBSIDIAN_DIR",'')
 HUGO_DIR = os.getenv("HUGO_DIR",'')
@@ -13,7 +14,7 @@ assert OBSIDIAN_DIR !='', "OBSIDIAN_DIR is not set"
 assert HUGO_DIR !='', "HUGO_DIR is not set"
 
 check_interval = 60
-hash_file = "obsidian_to_hugo.hash"
+hash_file = Path(__file__).parent / "obsidian_to_hugo.hash"
 
 def get_hash(dir: str) -> str:
     import hashlib
@@ -41,9 +42,10 @@ def check(o2h: obsidian_to_hugo.ObsidianToHugo):
     if current_hash != last_hash:
         print("Obsidian directory has changed, updating...")
         o2h.run()
-        push_to_git()
         with open(hash_file, "w") as f:
             f.write(current_hash)
+
+        push_to_git()
         print("Update complete")
     else:
         print("No changes detected")
