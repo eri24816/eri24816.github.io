@@ -69,3 +69,6 @@ a:hover {
 .card-text{
     color:rgb(210, 220, 255);}
 
+.card{
+    background: linear-gradient(50deg, rgba(75, 75, 75, 0.36) 0%, rgba(69, 69, 69, 0.63) 100%); 
+}
