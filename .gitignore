@@ -12,3 +12,4 @@ $RECYCLE.BIN/
 .DS_Store
 
 .env
+obsidian_to_hugo.hash

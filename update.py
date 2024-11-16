@@ -13,7 +13,7 @@ HUGO_DIR = os.getenv("HUGO_DIR",'')
 assert OBSIDIAN_DIR !='', "OBSIDIAN_DIR is not set"
 assert HUGO_DIR !='', "HUGO_DIR is not set"
 
-check_interval = 60
+check_interval = 300
 hash_file = Path(__file__).parent / "obsidian_to_hugo.hash"
 
 def get_hash(dir: str) -> str:
