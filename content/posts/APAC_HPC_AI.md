@@ -6,17 +6,17 @@ draft: true
 
 The 2022 APAC HPC AI Competition have just finished, which took 7 months from the begining training to the final presentation. 
 
-Here is a review about what I got from participanting in the competition:
+Here is a review about what I got from participating in the competition:
 
 - Leadership
 
-    Being the captain of the Team NCKU, my role was a "buffer" between the competition orgranizer and our teammates.
+    Being the captain of the Team NCKU, my role was a "buffer" between the competition organizer and our teammates.
 
-- Confidence in speking English
+- Confidence in speaking English
 
-    My past experiences of speaking English were bad. The most occasions where I had to speak English were interviews. I had to express myself in English, but most of the time I just stuck there and struggle with how I could turn my thought into words thus lost the opotunities. 
+    My past experiences of speaking English were bad. The most occasions where I had to speak English were interviews. I had to express myself in English, but most of the time I just stuck there and struggle with how I could turn my thought into words thus lost the opportunities. 
     
-    When I was preparing for the final presentation of the HPC-AI Competition, I wrote down most the speech I planned to say word by word to avoid that I would stuck during the presentation and make it akward. During the presentation, I surprisingly found that most of the time my mind could natually generate words to say without the notes. I felt that I was speaking English much more fluently than before. I could also understand all that the judges said and have a clear conversation with them. After the presentation, I gained much confidence in speaking English. This will surely be very beneficial to my carreer.
+    When I was preparing for the final presentation of the HPC-AI Competition, I wrote down most the speech I planned to say word by word to avoid that I would stuck during the presentation and make it awkward. During the presentation, I surprisingly found that most of the time my mind could naturally generate words to say without the notes. I felt that I was speaking English much more fluently than before. I could also understand all that the judges said and have a clear conversation with them. After the presentation, I gained much confidence in speaking English. This will surely be very beneficial to my career.
 
 - HPC skills
 
