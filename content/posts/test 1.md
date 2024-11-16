@@ -3,7 +3,7 @@ title: ouoo
 date: 2024-11-16
 authors:
   - eri24816
-image: ""
+image: Pasted image 20241116164350.png
 draft: false
 tags: 
 categories: 
