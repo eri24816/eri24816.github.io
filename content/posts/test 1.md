@@ -1,13 +1,14 @@
 ---
-date:
-  "{ date }": 
+title: ouoo
+date: 2024-11-16
 authors:
   - eri24816
-title:
-  "{ title }": 
+image: ""
+draft: false
 tags: 
 categories: 
-series:
+series: 
+summary:
 ---
-testest
+[test]({{< ref "test" >}})
 {{< figure src="/attachments/Pasted image 20241116164350.png"  >}}
