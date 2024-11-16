@@ -41,6 +41,7 @@ def check(o2h: obsidian_to_hugo.ObsidianToHugo):
     if current_hash != last_hash:
         print("Obsidian directory has changed, updating...")
         o2h.run()
+        push_to_git()
         with open(hash_file, "w") as f:
             f.write(current_hash)
         print("Update complete")
