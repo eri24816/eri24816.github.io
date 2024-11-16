@@ -21,6 +21,9 @@ jobs:
           hugo-version: '0.138.0'
           extended: true
 
+      - name: Install Hugo-Theme-Chunky-Poster
+        run: cd themes/chunky-poster && npm install
+
       - name: Build
         run: hugo --minify
 
