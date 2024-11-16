@@ -6,8 +6,7 @@ authors:
 image: Pasted image 20241116182611.png
 draft: false
 tags: 
-categories:
-  - Uncategorized
+categories: Uncategorized
 series: 
 summary:
 ---
