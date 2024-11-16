@@ -1,6 +1,6 @@
 ---
 title: ""
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: 2024-11-16
 authors: 
 - eri24816
 image: ""
@@ -10,4 +10,3 @@ categories: []
 series: []
 summary: 
 ---
-{{< figure src="Pasted image 20241116164350.png"  >}}
