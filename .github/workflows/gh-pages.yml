@@ -21,6 +21,9 @@ jobs:
           hugo-version: '0.124.1'
           extended: true
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Build
         uses: nick-fields/retry@v3
         with:
