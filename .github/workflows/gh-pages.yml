@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Install dependencies (chunky-poster)
-        run: cd themes/chunky-poster && npm install
+        run: cd themes/chunky-poster && yarn install
 
       - name: Build
         uses: nick-fields/retry@v3
