@@ -10,3 +10,4 @@ categories:
 series: 
 summary:
 ---
+{{< figure src="/Pasted image 20241116180645.png"  >}}
