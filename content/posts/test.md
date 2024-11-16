@@ -3,10 +3,10 @@ title: test
 date: 2024-11-16
 authors:
   - eri24816
-image: Pasted image 20241116181027.png
+image: /Pasted image 20241116181027.png
 draft: false
 tags: 
-categories: 
+categories: Uncategorized
 series: 
 summary:
 ---
