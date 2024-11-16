@@ -7,7 +7,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
-    timeout-minutes: 3
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -22,7 +21,11 @@ jobs:
           hugo-version: '0.85.0'
 
       - name: Build
-        run: hugo --minify
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 1
+          max_attempts: 3
+          command: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
