@@ -1,5 +1,5 @@
 ---
-title: 廢文
+title: 關於台灣的大學入學考試
 date: 2021-12-04T13:49:55+08:00
 draft: false
 categories: self
