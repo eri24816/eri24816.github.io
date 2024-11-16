@@ -11,4 +11,4 @@ series:
 summary:
 ---
 [test]({{< ref "test" >}})
-{{< figure src="Pasted image 20241116174313.png"  >}}
+{{< figure src="Pasted image 20241116174948.png"  >}}
