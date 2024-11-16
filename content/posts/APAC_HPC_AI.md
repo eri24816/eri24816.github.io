@@ -1,10 +1,12 @@
 ---
-title: "What I Gained From the 2022 APAC HPC-AI Competition"
+title: What I Gained From the 2022 APAC HPC-AI Competition
 date: 2022-10-25T09:19:13+08:00
-draft: true
+draft: false
+categories: self
+tags:
 ---
 
-The 2022 APAC HPC AI Competition have just finished, which took 7 months from the begining training to the final presentation. 
+The 2022 APAC HPC AI Competition have just finished, which took 7 months from the beginning training to the final presentation. 
 
 Here is a review about what I got from participating in the competition:
 
@@ -20,6 +22,6 @@ Here is a review about what I got from participating in the competition:
 
 - HPC skills
 
-    In my highschool times, I loved deep learning, but I didn't know that HPC was a thing. From the training sessions and the oppotunity to access supercomputers in the competition, I learnt how people train their models across mutiple GPUs or mutiple machines. In my current job related to deep learning, I use the Tainwania II supercomputer and apply data-parrallel to my training code without pain, thanks to the previous experiences gained in the competition.
+    In my high school times, I loved deep learning, but I didn't know that HPC was a thing. From the training sessions and the opportunity to access supercomputers in the competition, I learnt how people train their models across mutiple GPUs or mutiple machines. In my current job related to deep learning, I use the Tainwania II supercomputer and apply data-parrallel to my training code without pain, thanks to the previous experiences gained in the competition.
 
 Actually I felt I didn't learn enough w.r.t the time I spent in the competition (for the competition my 2 other projects was suspended for months). However, the things I learned was indeed useful for my career.
