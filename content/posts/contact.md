@@ -1,9 +1,9 @@
 ---
-title: "Contact"
+title: Contact
 date: 2023-09-11T15:21:01+08:00
 draft: false
-categories: "self"
-summary: "Contact me"
+categories: self
+summary: eri24816@gmail.com
 ---
 
 Mail: eri24816@gmail.com
